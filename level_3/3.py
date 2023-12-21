@@ -1,7 +1,8 @@
 from constants import ___
+import typing
 
 
-def create_user(user_name: str, user_age: int, after_created: callable) -> None:
+def create_user(user_name: str, user_age: int, after_created: typing.Callable[[int], None]): # had to remove '-> None:' cuz mypy said so
     pass
 
 
